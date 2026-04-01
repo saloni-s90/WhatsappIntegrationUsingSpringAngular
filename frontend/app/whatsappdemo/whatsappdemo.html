@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Whatsapp Demo</h2>
+<mat-form-field >
+  <mat-label>Mobile Number</mat-label>
+  <input matInput placeholder="eg : +911234567897" [(ngModel)] = "phone" >
+</mat-form-field>
+
+<br><br>
+<mat-form-field>
+  <mat-label>Message</mat-label>
+  <textarea matInput [(ngModel)] = "message" ></textarea>
+</mat-form-field>
+<br><br>
+ <button matButton="outlined" (click)="onsendWhatsappMessage()" >Send Whatsapp Message</button>
+
+</div>
